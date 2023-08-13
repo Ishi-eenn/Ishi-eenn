@@ -1,5 +1,3 @@
-![github-contribution-grid-snake](https://raw.githubusercontent.com/Ishi-eenn/Ishi-eenn/master/img/snake.svg)
-
 [![tsishika's 42 stats](https://badge42.vercel.app/api/v2/clisj76ld001108l1qb24uba8/stats?cursusId=21&coalitionId=307)](https://github.com/JaeSeoKim/badge42)
 
 <p align="left">
