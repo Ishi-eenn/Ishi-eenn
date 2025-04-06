@@ -23,6 +23,7 @@ jobs:
           # Options
           filename: metrics1.svg
           user: Ishi-eenn
+          template: terminal
           base: header, activity, repositories, metadata
           config_timezone: Asia/Tokyo
           config_twemoji: yes
@@ -53,6 +54,7 @@ jobs:
           # Options
           filename: metrics2.svg
           user: Ishi-eenn
+          template: terminal
           base: ""
           config_timezone: Asia/Tokyo
           config_twemoji: yes
@@ -68,6 +70,4 @@ jobs:
 
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
-          
-          plugin_calendar: yes
-          plugin_calendar_limit: 1
+
