@@ -19,7 +19,6 @@ jobs:
         with:
           # Your GitHub token
           token: ${{ secrets.TOKEN }}
-          committer_gist: ${{ secrets.GIST }}
 
           # Options
           filename: metrics1.svg
@@ -27,7 +26,8 @@ jobs:
           base: header, activity, repositories, metadata
           config_timezone: Asia/Tokyo
           config_twemoji: yes
-          repositories_skipped:
+          output_action: gist
+          committer_gist: ${{ secrets.GIST }}
           use_prebuilt_image: yes
 
           plugin_languages: yes
