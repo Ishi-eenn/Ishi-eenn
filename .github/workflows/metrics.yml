@@ -23,6 +23,7 @@ jobs:
           # Options
           filename: metrics1.svg
           user: Ishi-eenn
+          template: classic
           base: header, activity, repositories, metadata
           config_timezone: Asia/Tokyo
           config_twemoji: yes
@@ -53,6 +54,7 @@ jobs:
           # Options
           filename: metrics2.svg
           user: Ishi-eenn
+          template: classic
           base: ""
           config_timezone: Asia/Tokyo
           config_twemoji: yes
