@@ -68,7 +68,7 @@ jobs:
 
           # Options
           filename: metrics1.svg
-          user: harsssh
+          user: Ishi-eenn
           base: header, activity, repositories, metadata
           config_timezone: Asia/Tokyo
           config_twemoji: yes
