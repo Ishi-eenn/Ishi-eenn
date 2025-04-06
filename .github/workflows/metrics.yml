@@ -68,3 +68,6 @@ jobs:
 
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
+          
+          plugin_calendar: yes
+          plugin_calendar_limit: 1
