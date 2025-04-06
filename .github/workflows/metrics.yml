@@ -44,9 +44,9 @@ jobs:
         with:
           filename: general.svg
           token: ${{ secrets.TOKEN }}
-          base: header, activity, community, repositories, metadata
+          base: header
           base_indepth: yes
-          config_order: base.header, isocalendar, languages, notable, discussions, topics
+          config_order: base.header, activity, community, repositories, metadata
           output_action: gist
           committer_gist: ${{ secrets.GIST }}
           plugin_isocalendar: yes
