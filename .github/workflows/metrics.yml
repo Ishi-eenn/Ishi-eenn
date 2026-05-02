@@ -63,10 +63,10 @@ jobs:
           use_prebuilt_image: yes
 
           plugin_habits: yes
-          plugin_habits_charts: yes
+          plugin_habits_charts: no
           plugin_habits_days: 14
           plugin_habits_facts: yes
-          plugin_habits_from: 200
+          plugin_habits_from: 100
 
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
