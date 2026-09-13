@@ -62,6 +62,9 @@ jobs:
           committer_gist: ${{ secrets.GIST }}
           use_prebuilt_image: yes
 
+          verbose: yes
+          debug: yes
+
           plugin_habits: yes
           plugin_habits_charts: no
           plugin_habits_days: 14
