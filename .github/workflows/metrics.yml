@@ -45,23 +45,6 @@ jobs:
 
           plugin_lines: yes
 
-      - name: 🐍 Metrics 2
-        uses: lowlighter/metrics@latest
-        with:
-          # Your GitHub token
-          token: ${{ secrets.TOKEN }}
-
-          # Options
-          filename: metrics2.svg
-          user: Ishi-eenn
-          template: classic
-          base: ""
-          config_timezone: Asia/Tokyo
-          config_twemoji: yes
-          output_action: gist
-          committer_gist: ${{ secrets.GIST }}
-          use_prebuilt_image: yes
-
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
