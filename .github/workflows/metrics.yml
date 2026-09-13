@@ -24,7 +24,7 @@ jobs:
           filename: metrics1.svg
           user: Ishi-eenn
           template: classic
-          base: header, activity, repositories, metadata
+          base: header, activity, repositories
           config_timezone: Asia/Tokyo
           config_twemoji: yes
           output_action: gist
