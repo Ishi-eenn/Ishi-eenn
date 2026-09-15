@@ -1,0 +1,49 @@
+name: Profile metrics
+on:
+  schedule: [{ cron: "0 0 * * *" }]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # The generator lives in Ishi-eenn/profile-metrics (public).
+      - name: Checkout generator
+        uses: actions/checkout@v4
+        with:
+          repository: Ishi-eenn/profile-metrics
+          path: generator
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+        working-directory: generator
+
+      - name: Generate terminal.svg
+        working-directory: generator
+        env:
+          # Prefer a PAT (private contributions); fall back to the built-in token.
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          METRICS_USER: Ishi-eenn
+          METRICS_OUTPUT: card.svg # generated but unused here
+          METRICS_TERMINAL_OUTPUT: ${{ github.workspace }}/terminal.svg
+        run: npm start
+
+      # Publish terminal.svg to a throwaway single-commit "output" branch so the
+      # profile README can reference it and main stays clean.
+      - name: Publish to output branch
+        run: |
+          mkdir -p out && cp terminal.svg out/terminal.svg
+          cd out
+          git init -q
+          git checkout -q -b output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add terminal.svg
+          git commit -q -m "chore: update terminal.svg"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" output
