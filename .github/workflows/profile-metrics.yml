@@ -34,16 +34,12 @@ jobs:
           METRICS_TERMINAL_OUTPUT: ${{ github.workspace }}/terminal.svg
         run: npm start
 
-      # Publish terminal.svg to a throwaway single-commit "output" branch so the
-      # profile README can reference it and main stays clean.
-      - name: Publish to output branch
+      # Publish terminal.svg to the gist (GIST is a PAT with the "gist" scope).
+      # The profile README references the gist raw URL.
+      - name: Publish to gist
+        env:
+          GH_TOKEN: ${{ secrets.GIST }}
+          GIST_ID: a56581b6b8c1976425bb67fbc649fc9c
         run: |
-          mkdir -p out && cp terminal.svg out/terminal.svg
-          cd out
-          git init -q
-          git checkout -q -b output
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add terminal.svg
-          git commit -q -m "chore: update terminal.svg"
-          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" output
+          jq -n --rawfile svg terminal.svg '{files: {"terminal.svg": {content: $svg}}}' \
+            | gh api -X PATCH "gists/$GIST_ID" --input -
