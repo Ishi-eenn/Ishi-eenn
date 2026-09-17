@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="734" height="531" viewBox="0 0 734 531" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace">
+  <style>
+    text { fill: #f8f8f2; font-size: 13.5px; white-space: pre; }
+    .p { fill: #50fa7b; }
+    .c { fill: #8be9fd; }
+    .n { fill: #ffb86c; }
+    .d { fill: #6272a4; }
+    .cur { fill: #f8f8f2; }
+    .title { fill: #6272a4; font-size: 12px; }
+  </style>
+  <g transform="translate(34, 34)">
+    <rect x="3" y="6" width="665.6200000000001" height="463" rx="10" fill="#000000" opacity="0.22" />
+    <rect width="665.6200000000001" height="463" rx="10" fill="#282a36" />
+    <circle cx="20" cy="18" r="6" fill="#ff5f56" />
+    <circle cx="40" cy="18" r="6" fill="#ffbd2e" />
+    <circle cx="60" cy="18" r="6" fill="#27c93f" />
+    <text x="332.81000000000006" y="22" text-anchor="middle" class="title">Ishi-eenn — zsh</text>
+    <line x1="292.2" y1="36" x2="292.2" y2="463" stroke="#44475a" stroke-width="1" />
+    <g xml:space="preserve">
+<text x="18" y="52"><tspan class="p">➜</tspan>  <tspan class="c">~</tspan>  cat profile</text>
+<text x="18" y="73">  Tsubasa Ishikawa</text>
+<text x="18" y="94">  Joined GitHub 4 years ago</text>
+<text x="18" y="115">  Followed by 52 users</text>
+<text x="18" y="136">  Contributed to 12 repositories</text>
+<rect x="34.3" y="144" width="13" height="13" rx="2" fill="#216e39" /><rect x="50.3" y="144" width="13" height="13" rx="2" fill="#9be9a8" /><rect x="66.3" y="144" width="13" height="13" rx="2" fill="#ebedf0" /><rect x="82.3" y="144" width="13" height="13" rx="2" fill="#ebedf0" /><rect x="98.3" y="144" width="13" height="13" rx="2" fill="#ebedf0" /><rect x="114.3" y="144" width="13" height="13" rx="2" fill="#ebedf0" /><rect x="130.3" y="144" width="13" height="13" rx="2" fill="#ebedf0" /><rect x="146.3" y="144" width="13" height="13" rx="2" fill="#ebedf0" /><rect x="162.3" y="144" width="13" height="13" rx="2" fill="#ebedf0" /><rect x="178.3" y="144" width="13" height="13" rx="2" fill="#30a14e" /><rect x="194.3" y="144" width="13" height="13" rx="2" fill="#30a14e" /><rect x="210.3" y="144" width="13" height="13" rx="2" fill="#216e39" /><rect x="226.3" y="144" width="13" height="13" rx="2" fill="#ebedf0" /><rect x="242.3" y="144" width="13" height="13" rx="2" fill="#ebedf0" />
+<text x="18" y="178"> </text>
+<text x="18" y="199"><tspan class="p">➜</tspan>  <tspan class="c">~</tspan>  cat activity</text>
+<text x="18" y="220">  <tspan class="n">  1712</tspan>  Commits</text>
+<text x="18" y="241">  <tspan class="n">    20</tspan>  Pull requests reviewed</text>
+<text x="18" y="262">  <tspan class="n">   218</tspan>  Pull requests opened</text>
+<text x="18" y="283">  <tspan class="n">    82</tspan>  Issues opened</text>
+<text x="18" y="304">  <tspan class="n">    61</tspan>  issue comments</text>
+<text x="18" y="325"> </text>
+<text x="18" y="346"><tspan class="p">➜</tspan>  <tspan class="c">~</tspan>  <tspan class="cur">▊</tspan></text>
+<text x="306.16" y="52"><tspan class="p">➜</tspan>  <tspan class="c">~</tspan>  cat repositories</text>
+<text x="306.16" y="73">  21 Repositories</text>
+<text x="306.16" y="94">  No license preference       0 Sponsors</text>
+<text x="306.16" y="115">  7 Releases                  5 Stargazers</text>
+<text x="306.16" y="136">  0 Packages                  0 Forkers</text>
+<text x="306.16" y="157">  287 MB used                 12 Watchers</text>
+<text x="306.16" y="178">  5.43m added, 103k removed   </text>
+<text x="306.16" y="199"> </text>
+<text x="306.16" y="220"><tspan class="p">➜</tspan>  <tspan class="c">~</tspan>  cat languages</text>
+<text x="306.16" y="241">  C++          <tspan fill="#f34b7d">███████</tspan><tspan class="d">░░░░░░░░░</tspan> <tspan class="n"> 42.6%</tspan></text>
+<text x="306.16" y="262">  C            <tspan fill="#555555">████</tspan><tspan class="d">░░░░░░░░░░░░</tspan> <tspan class="n"> 25.5%</tspan></text>
+<text x="306.16" y="283">  Java         <tspan fill="#b07219">██</tspan><tspan class="d">░░░░░░░░░░░░░░</tspan> <tspan class="n"> 12.7%</tspan></text>
+<text x="306.16" y="304">  HTML         <tspan fill="#e34c26">█</tspan><tspan class="d">░░░░░░░░░░░░░░░</tspan> <tspan class="n">  8.7%</tspan></text>
+<text x="306.16" y="325">  TypeScript   <tspan fill="#3178c6">█</tspan><tspan class="d">░░░░░░░░░░░░░░░</tspan> <tspan class="n">  4.6%</tspan></text>
+<text x="306.16" y="346">  JavaScript   <tspan fill="#f1e05a">█</tspan><tspan class="d">░░░░░░░░░░░░░░░</tspan> <tspan class="n">  2.2%</tspan></text>
+<text x="306.16" y="367">  Objective-C  <tspan fill="#438eff">█</tspan><tspan class="d">░░░░░░░░░░░░░░░</tspan> <tspan class="n">  2.0%</tspan></text>
+<text x="306.16" y="388">  Makefile     <tspan fill="#427819">█</tspan><tspan class="d">░░░░░░░░░░░░░░░</tspan> <tspan class="n">  1.7%</tspan></text>
+<text x="306.16" y="409"> </text>
+<text x="306.16" y="430"><tspan class="p">➜</tspan>  <tspan class="c">~</tspan>  <tspan class="cur">▊</tspan></text>
+    </g>
+  </g>
+</svg>
