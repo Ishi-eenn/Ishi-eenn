@@ -38,7 +38,7 @@ jobs:
       # The profile README references the gist raw URL.
       - name: Publish to gist
         env:
-          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GIST }}
           GIST_ID: a56581b6b8c1976425bb67fbc649fc9c
         run: |
           jq -n --rawfile svg terminal.svg '{files: {"terminal.svg": {content: $svg}}}' \
